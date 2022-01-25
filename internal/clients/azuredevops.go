@@ -31,11 +31,11 @@ import (
 )
 
 const (
-	keyToken    = "personal_access_token"
-	keyURL      = "org_service_url"
+	keyToken = "personal_access_token"
+	keyURL   = "org_service_url"
 
 	// AzureDevOps credentials environment variable names
-	envToken    = "AZDO_PERSONAL_ACCESS_TOKEN"
+	envToken = "AZDO_PERSONAL_ACCESS_TOKEN"
 )
 
 const (
@@ -87,7 +87,7 @@ func TerraformSetupBuilder(version, providerSource, providerVersion string) terr
 		// set provider configuration
 		ps.Configuration = map[string]interface{}{}
 		if v, ok := azuredevopsCreds[keyURL]; ok {
-				ps.Configuration[keyURL] = v
+			ps.Configuration[keyURL] = v
 		}
 
 		// set environment variables for sensitive provider configuration

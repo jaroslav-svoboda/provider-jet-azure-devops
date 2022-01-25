@@ -17,9 +17,9 @@ limitations under the License.
 package config
 
 import (
+	project "github.com/crossplane-contrib/provider-jet-azuredevops/config/project"
 	tjconfig "github.com/crossplane/terrajet/pkg/config"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	project "github.com/crossplane-contrib/provider-jet-azuredevops/config/project"
 )
 
 const (
@@ -38,9 +38,9 @@ func GetProvider(resourceMap map[string]*schema.Resource) *tjconfig.Provider {
 
 	pc := tjconfig.NewProvider(resourceMap, resourcePrefix, modulePath,
 		tjconfig.WithDefaultResourceFn(defaultResourceFn),
-    tjconfig.WithIncludeList([]string{
-        "azuredevops_project$",
-    }))
+		tjconfig.WithIncludeList([]string{
+			"azuredevops_project$",
+		}))
 
 	for _, configure := range []func(provider *tjconfig.Provider){
 		// add custom config functions
