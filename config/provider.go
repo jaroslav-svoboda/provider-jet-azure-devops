@@ -19,11 +19,12 @@ package config
 import (
 	tjconfig "github.com/crossplane/terrajet/pkg/config"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	project "github.com/crossplane-contrib/provider-jet-azuredevops/config/project"
 )
 
 const (
-	resourcePrefix = "template"
-	modulePath     = "github.com/crossplane-contrib/provider-jet-template"
+	resourcePrefix = "azuredevops"
+	modulePath     = "github.com/crossplane-contrib/provider-jet-azuredevops"
 )
 
 // GetProvider returns provider configuration
@@ -36,10 +37,14 @@ func GetProvider(resourceMap map[string]*schema.Resource) *tjconfig.Provider {
 	}
 
 	pc := tjconfig.NewProvider(resourceMap, resourcePrefix, modulePath,
-		tjconfig.WithDefaultResourceFn(defaultResourceFn))
+		tjconfig.WithDefaultResourceFn(defaultResourceFn),
+    tjconfig.WithIncludeList([]string{
+        "azuredevops_project$",
+    }))
 
 	for _, configure := range []func(provider *tjconfig.Provider){
 		// add custom config functions
+		project.Configure,
 	} {
 		configure(pc)
 	}
