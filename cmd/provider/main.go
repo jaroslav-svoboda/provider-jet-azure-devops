@@ -32,6 +32,7 @@ import (
 	pconfig "github.com/crossplane-contrib/provider-jet-azuredevops/config"
 	"github.com/crossplane-contrib/provider-jet-azuredevops/internal/clients"
 	"github.com/crossplane-contrib/provider-jet-azuredevops/internal/controller"
+	conversion "github.com/crossplane/terrajet/pkg/types/conversion"
 )
 
 func main() {
