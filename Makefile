@@ -5,10 +5,10 @@ PROJECT_NAME := provider-jet-azuredevops
 PROJECT_REPO := github.com/crossplane-contrib/$(PROJECT_NAME)
 
 export TERRAFORM_VERSION := 1.0.11
-export TERRAFORM_PROVIDER_SOURCE := hashicorp/hashicups
-export TERRAFORM_PROVIDER_VERSION := 0.3.2
-export TERRAFORM_PROVIDER_DOWNLOAD_NAME := terraform-provider-hashicups
-export TERRAFORM_PROVIDER_DOWNLOAD_URL_PREFIX := https://github.com/hashicorp/terraform-provider-hashicups/releases/download/v0.3.2
+export TERRAFORM_PROVIDER_SOURCE := microsoft/azuredevops
+export TERRAFORM_PROVIDER_VERSION := 0.1.8
+export TERRAFORM_PROVIDER_DOWNLOAD_NAME := terraform-provider-azuredevops
+export TERRAFORM_PROVIDER_DOWNLOAD_URL_PREFIX := https://releases.hashicorp.com/terraform-provider-azuredevops/0.1.8
 
 PLATFORMS ?= linux_amd64 linux_arm64
 

@@ -28,7 +28,7 @@ import (
 	"github.com/crossplane/terrajet/pkg/pipeline"
 	// Comment out the line below, if your Terraform provider uses an old
 	// version (<v2) of github.com/hashicorp/terraform-plugin-sdk.
-	"github.com/crossplane/terrajet/pkg/types/conversion"
+	conversion "github.com/crossplane/terrajet/pkg/types/conversion"
 
 	"github.com/crossplane-contrib/provider-jet-azuredevops/config"
 )
