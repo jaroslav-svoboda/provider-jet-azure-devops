@@ -21,7 +21,7 @@ require (
 // Comment out the line below instead of the above, if your Terraform provider
 // uses an old version (<v2) of github.com/hashicorp/terraform-plugin-sdk.
 replace (
+	github.com/crossplane/terrajet => github.com/turkenh/terrajet v0.0.0-20220124141610-617a1c30a0dc
 	github.com/hashicorp/terraform-plugin-sdk => github.com/turkenh/terraform-plugin-sdk v1.17.2-patch1
 	github.com/spf13/afero => github.com/spf13/afero v1.2.2
-  github.com/crossplane/terrajet => github.com/turkenh/terrajet v0.0.0-20220124141610-617a1c30a0dc
 )
