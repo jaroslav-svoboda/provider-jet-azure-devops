@@ -1,6 +1,6 @@
 module github.com/crossplane-contrib/provider-jet-azuredevops
 
-go 1.16
+go 1.17
 
 require (
 	github.com/crossplane/crossplane-runtime v0.15.1-0.20211004150827-579c1833b513
