@@ -127,6 +127,13 @@ jobs:
       - name: Check Diff
         run: make check-diff
 
+      - name: Publish Artifacts to GitHub
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: outapisput
+          path: apis/**        
+
   unit-tests:
     runs-on: ubuntu-18.04
     needs: detect-noop
