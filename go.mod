@@ -10,7 +10,6 @@ require (
 	github.com/microsoft/terraform-provider-azuredevops v1.1.8
 	github.com/pkg/errors v0.9.1
 	go.uber.org/multierr v1.7.0 // indirect
-	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
 	k8s.io/apimachinery v0.22.0
 	k8s.io/client-go v0.22.0
@@ -20,8 +19,9 @@ require (
 
 // Comment out the line below instead of the above, if your Terraform provider
 // uses an old version (<v2) of github.com/hashicorp/terraform-plugin-sdk.
+// replace github.com/hashicorp/terraform-plugin-sdk => github.com/turkenh/terraform-plugin-sdk v1.17.2-patch1
+
 replace (
-	github.com/crossplane/terrajet => github.com/turkenh/terrajet v0.0.0-20220124141610-617a1c30a0dc
 	github.com/hashicorp/terraform-plugin-sdk => github.com/turkenh/terraform-plugin-sdk v1.17.2-patch1
 	github.com/spf13/afero => github.com/spf13/afero v1.2.2
 )
