@@ -23,5 +23,5 @@ require (
 replace (
 	github.com/hashicorp/terraform-plugin-sdk => github.com/turkenh/terraform-plugin-sdk v1.17.2-patch1
 	github.com/spf13/afero => github.com/spf13/afero v1.2.2
-
+  github.com/crossplane/terrajet => github.com/turkenh/terrajet v0.0.0-20220124141610-617a1c30a0dc
 )
