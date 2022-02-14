@@ -4,10 +4,9 @@ metadata:
   name: example-project
 spec:
   forProvider:
-    name: "Test Project"
     description: "Test Project Description"
     visibility: "private"
-    version_control: "Git"
-    work_item_template: "Agile"
+    versionControl: "Git"
+    workItemTemplate: "Agile"
   providerConfigRef:
     name: default

@@ -4,7 +4,7 @@
 PROJECT_NAME := provider-jet-azuredevops
 PROJECT_REPO := github.com/crossplane-contrib/$(PROJECT_NAME)
 
-export TERRAFORM_VERSION := 1.1.4
+export TERRAFORM_VERSION := 1.1.5
 export TERRAFORM_PROVIDER_SOURCE := microsoft/azuredevops
 export TERRAFORM_PROVIDER_VERSION := 0.1.8
 export TERRAFORM_PROVIDER_DOWNLOAD_NAME := terraform-provider-azuredevops
